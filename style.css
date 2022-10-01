@@ -9,6 +9,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a:visited {
+    color: inherit;
+}
+
 .header, .footer {
     width: 100%;
     height: 100px;
@@ -27,7 +31,7 @@ body {
     min-height:100%;
     background-image: url("./images/leaves.jpg");
     background-size: cover;
-    min-width: 200px;
+    min-width: 350px;
     max-width: 400px;
     color: white;
     display: flex;
@@ -42,6 +46,7 @@ body {
     min-width: 400px;
     max-width: 800px;
 }
+
 
 .title {
     display: flex;
@@ -71,9 +76,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 500px;
+    max-width: 600px;
+    min-width: 600px;
     justify-content: space-evenly;
-    background-color: rgb(252,252,252);
+    background-color: rgb(245, 245, 245);
 }
 
 .content {
@@ -82,13 +88,19 @@ body {
 
 }
 
+.author {
+    font-size: 12px;
+}
+
 
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(245,245,245);
+    background-color: rgb(252,252,252);
+    height: 35%;
+    max-height: 400px;
 
     
 }
@@ -120,4 +132,54 @@ form > * {
 .bottom {
     padding-left: 20px;
     min-height: 15%;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid rgb(225,225,225);
+    margin: 0px;
+    padding: 0px;
+}
+
+input:focus {
+    border: 1px solid rgba(0, 0, 255, 0.55);
+    outline: none;
+}
+
+label {
+    font-size: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.btn {
+    margin-left: 20px;
+    width: 125px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(86, 122, 86) ;
+    background-color: rgb(86, 122, 86);
+    color: white;
+    position:absolute; 
+    top: -30px;
+
+}
+
+.btn-div {
+    display: flex;
+    position: relative;
+    height: 15%; 
+    align-items:flex-start;
+    margin-top: 0px;
+}
+
+.log {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.logg {
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(86,122,86);
 }

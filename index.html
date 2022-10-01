@@ -9,6 +9,7 @@
 </head>
 <body>
     <div>
+        
 
    
     <div class="header"></div>
@@ -20,7 +21,7 @@
             </div>
 
             <div class="credit">
-                <p>Photo by Halie West on Unsplash</p>
+                <p class="author">Photo by Halie West on Unsplash</p>
             </div>
 
         </div>
@@ -40,7 +41,7 @@
                 </p>
 
             </div>
-                <form>
+                <form id="myform" method="post" action="">
                 <h3>Let's do this!</h3>
                 <div class="check">
                     <div class="col-1">
@@ -56,14 +57,14 @@
 
                     </div>
                     <div class="col-1">
-                        <label for="name">FIRST NAME</label>
-                        <input type="text" id="name" name="name">
+                        <label for="last">LAST NAME</label>
+                        <input type="text" id="last" name="last">
 
-                        <label for="name">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <label for="phone">PHONE</label>
+                        <input type="tel" id="phone" name="phone">
 
-                        <label for="name">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm" name="confirm">
 
 
                     </div>
@@ -73,20 +74,25 @@
                    
 
                 </form>
+                <div class="btn-div">
+                    <button type='submit' form='myform' class="btn">Create Account</button>
+                    <p class="log">Already have an account? <span class='logg'><a href="">Log in</a></span> </p>
 
-                <div class="bottom">
-                    <button>Placeholder</button>
 
                 </div>
 
 
 
-
         </div>
 
+
+        
+
     </div>
+    
     <div class="footer"></div>
 </div>
+
     
 </body>
 </html>

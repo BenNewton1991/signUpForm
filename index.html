@@ -8,6 +8,7 @@
     <title>SignUp-Form</title>
 </head>
 <body>
+    <script src="./script.js" defer></script>
     <div>
         
 
@@ -16,12 +17,12 @@
     <div class="main">
         <div class="left">
             <div class="title">
-                <img src="./images/logo.png">
-                <h1>Odin</h1>
+                <img src="./images/treelogo.png">
+                <h1>Eco Club</h1>
             </div>
 
             <div class="credit">
-                <p class="author">Photo by Halie West on Unsplash</p>
+                <p class="author">Photo by <a href='https://unsplash.com/@landscapeplaces'>Fedderico Bottos</a> on <a href='https://unsplash.com/'>Unsplash</a></p>
             </div>
 
         </div>
@@ -44,7 +45,7 @@
                 <form id="myform" method="post" action="">
                 <h3>Let's do this!</h3>
                 <div class="check">
-                    <div class="col-1">
+                    <div id='col' class="col-1">
                         <label for="name">FIRST NAME</label>
                         <input type="text" id="name" name="name">
 
@@ -75,7 +76,7 @@
 
                 </form>
                 <div class="btn-div">
-                    <button type='submit' form='myform' class="btn">Create Account</button>
+                    <button type='button' form='myform' class="btn" id="btn">Create Account</button>
                     <p class="log">Already have an account? <span class='logg'><a href="">Log in</a></span> </p>
 
 
